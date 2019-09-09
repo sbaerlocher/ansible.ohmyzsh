@@ -4,9 +4,11 @@
   vars:
     users:
       - usernmae: test
+        shell: /usr/bin/zsh
   pre_tasks:
     - name: create users
       user:
         name: test
+        shell: /usr/bin/zsh
   roles:
     - role: sbaerlocher.ohmyzsh
