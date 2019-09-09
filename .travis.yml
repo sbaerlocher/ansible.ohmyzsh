@@ -4,7 +4,7 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: projectname
+    - ROLE_NAME: ohmyzsh
   matrix:
     - MOLECULE_DISTRO: centos7
     - MOLECULE_DISTRO: centos6
@@ -19,8 +19,8 @@ install:
 
 before_script:
   - cd ../
-  - mv ansible.$ROLE_NAME projectgroup.$ROLE_NAME
-  - cd projectgroup.$ROLE_NAME
+  - mv ansible.$ROLE_NAME sbaerlocher.$ROLE_NAME
+  - cd sbaerlocher.$ROLE_NAME
 
 script:
   - molecule test

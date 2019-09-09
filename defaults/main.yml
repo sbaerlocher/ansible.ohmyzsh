@@ -1,2 +1,18 @@
 ---
 # defaults file for sbaerlocher.ohmyzsh
+
+# List of users where oh-my-zsh should be installed.
+# Example:
+# ohmyzsh_users:
+#  - username:
+#    theme:
+#    plugins:
+#     - git
+ohmyzsh_users: "{{ users|selectattr('shell','equalto','/usr/bin/zsh' )|list }}"
+
+# Default oh-my-zsh themes, if the user has not set any.
+ohmyzsh_theme: 'af-magic'
+
+# Default oh-my-zsh plugins, if the user has not set any.
+ohmyzsh_plugins:
+  - git

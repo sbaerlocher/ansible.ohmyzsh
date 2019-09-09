@@ -4,6 +4,8 @@
 
 ## Description
 
+Role to download, install and configure [Oh-My-Zsh](http://ohmyz.sh/).
+
 ## Installation
 
 ```bash
@@ -12,9 +14,50 @@ ansible-galaxy install sbaerlocher.ohmyzsh
 
 ## Requirements
 
+none
+
 ## Role Variables
 
+### ohmyzsh_users
+
+List of users where oh-my-zsh should be installed.
+
+#### example
+
+```yml
+ohmyzsh_users:
+  - username:
+    theme:
+    plugins:
+      - git
+```
+
+#### default
+
+```yml
+ohmyzsh_users: "{{ users | selectattr('shell', 'equalto', '/usr/bin/zsh' ) | list }}"
+```
+
+### ohmyzsh_theme
+
+Default oh-my-zsh themes, if the user has not set any.
+
+```yml
+ohmyzsh_theme: 'af-magic'
+```
+
+### ohmyzsh_plugins
+
+Default oh-my-zsh plugins, if the user has not set any.
+
+```yml
+ohmyzsh_plugins:
+  - git
+```
+
 ## Dependencies
+
+none
 
 ## Example Playbook
 
