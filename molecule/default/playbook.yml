@@ -1,5 +1,12 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    users:
+      - usernmae: test
+  pre_tasks:
+    - name: create users
+      user:
+        name: test
   roles:
     - role: sbaerlocher.ohmyzsh
