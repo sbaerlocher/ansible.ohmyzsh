@@ -4,7 +4,7 @@
 
 ## Description
 
-Role to download, install and configure [Oh-My-Zsh](http://ohmyz.sh/).
+This role installs and configures [Oh-My-Zsh](http://ohmyz.sh/) under Linux.
 
 ## Installation
 
