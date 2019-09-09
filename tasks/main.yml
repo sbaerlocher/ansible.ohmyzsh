@@ -32,6 +32,6 @@
     dest: '/home/{{ item.username }}/.zshrc'
     backup: true
     owner: '{{ item.username }}'
-    group: '{{ item.group | default(item.username)}}'
+    group: '{{ item.group | default(item.username) }}'
     mode: 'u=rw,go=r'
   with_items: '{{ users }}'
