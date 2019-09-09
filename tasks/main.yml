@@ -22,7 +22,7 @@
   become: true
   user:
     name: '{{ item.username }}'
-    shell: "{{ item.shell | default('/bin/zsh) }}"
+    shell: "{{ item.shell | default('/bin/zsh') }}"
   with_items: '{{ users }}'
 
 - name: write .zshrc for users
