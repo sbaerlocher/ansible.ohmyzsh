@@ -16,3 +16,4 @@ ohmyzsh_theme: 'af-magic'
 # Default oh-my-zsh plugins, if the user has not set any.
 ohmyzsh_plugins:
   - git
+  - gpg-agent
