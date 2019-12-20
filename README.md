@@ -1,6 +1,6 @@
 # Ansible Role: ohmyzsh
 
-[![Build Status](https://img.shields.io/travis/sbaerlocher/ansible.ohmyzsh.svg?branch=master&style=popout-square)](https://travis-ci.org/sbaerlocher/ansible.ohmyzsh) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-ohmyzsh-blue.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/ohmyzsh) [![Ansible Role](https://img.shields.io/ansible/role/d/id.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/ohmyzsh)
+[![Build Status](https://img.shields.io/travis/sbaerlocher/ansible.ohmyzsh.svg?branch=master&style=popout-square)](https://travis-ci.org/sbaerlocher/ansible.ohmyzsh) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-ohmyzsh-blue.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/ohmyzsh) [![Ansible Role](https://img.shields.io/ansible/role/d/43225.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/ohmyzsh)
 
 ## Description
 
