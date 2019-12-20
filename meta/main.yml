@@ -1,9 +1,8 @@
 ---
 galaxy_info:
   role_name: ohmyzsh
-  author:
-  description:
-  company:
+  author: 'Simon Baerlocher'
+  description: 'This role installs and configures Oh-My-Zsh under Linux.'
   license: MIT
   min_ansible_version: 2.8
   platforms:
@@ -23,10 +22,11 @@ galaxy_info:
         - jessie
         - stretch
         - buster
-    - name: Windows
-      versions:
-        - all
 
-  galaxy_tags: []
+  galaxy_tags:
+    - system
+    - shell
+    - user
+    - zsh
 
 dependencies: []

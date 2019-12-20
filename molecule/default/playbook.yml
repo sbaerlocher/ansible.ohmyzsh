@@ -1,5 +1,16 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    users:
+      - username: test
+        shell: /usr/bin/zsh
+  pre_tasks:
+    - name: create users
+      user:
+        name: '{{ item.username }}'
+        shell: '{{ item.shell }}'
+      with_items:
+        - '{{ users }}'
   roles:
     - role: sbaerlocher.ohmyzsh
